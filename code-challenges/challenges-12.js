@@ -76,7 +76,6 @@ const cvsFiltration = (arr) => {
     let newArray=arr.filter(array=>array.yearsOfExperience>4 && array.tech==="JS");
     let lastArray=[];
     for (let i = 0; i < newArray.length; i++) {
-    
         lastArray=[{"fullName":`${newArray[i].firstName} ${newArray[i].LastName}`, "tech":newArray[i].tech  }]
     }
     return lastArray;
